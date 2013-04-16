@@ -1,0 +1,22 @@
+ru:
+  activerecord:
+    models:
+      price: Услуга
+      feedback: "Обратная связь"
+      work: "Примеры работ"
+    attributes:
+      price:
+        description: Описание
+        cost: Цена
+        service_name: "Название услуги"
+        time: "Время выполнения"
+      feedback:
+        email: "Электронная почта"
+        feedback_text: Текст
+        type: "Тип обращения"
+        name: "Ваше имя"
+      work:
+        describe: Описание
+        link: Ссылка
+        price_id: "Вид услуги"
+        title: "Название"

@@ -8,6 +8,8 @@ gem 'rails', '3.2.12'
 gem 'pg'
 gem 'haml'
 gem 'haml-rails'
+gem 'simple_form'
+gem 'i18n'
 
 # Gems used only for assets and not required
 # in production environments by default.

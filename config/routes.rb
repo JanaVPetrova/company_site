@@ -1,5 +1,12 @@
 CompanySite::Application.routes.draw do
+  resources :feedbacks
+
+
   resources :works
+
+  resources :prices
+
+  root :to => 'prices#index'
 
 
   # The priority is based upon order of creation:
