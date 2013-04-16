@@ -1,0 +1,15 @@
+= simple_form_for @work do |f|
+  - if @work.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@work.errors.count, "error")} prohibited this price from being saved:"
+      %ul
+        - @work.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.input :title
+    = f.input :describe
+    = f.association :price, as: :select, label_method: :service_name, value_method: :id
+    = f.input :link
+  .actions
+    = f.submit 'Save'
