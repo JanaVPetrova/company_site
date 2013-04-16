@@ -3,6 +3,7 @@ ru:
     models:
       price: Услуга
       feedback: "Обратная связь"
+      work: "Примеры работ"
     attributes:
       price:
         description: Описание
@@ -14,3 +15,8 @@ ru:
         feedback_text: Текст
         type: "Тип обращения"
         name: "Ваше имя"
+      work:
+        describe: Описание
+        link: Ссылка
+        price_id: "Вид услуги"
+        title: "Название"
