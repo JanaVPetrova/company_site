@@ -1,4 +1,10 @@
 CompanySite::Application.routes.draw do
+  resources :prices
+
+
+  resources :price_lists
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

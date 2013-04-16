@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  service_name: MyString
+  description: MyText
+  price: 
+  time: 1
+
+two:
+  service_name: MyString
+  description: MyText
+  price: 
+  time: 1
