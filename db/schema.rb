@@ -11,7 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130416185918) do
+ActiveRecord::Schema.define(:version => 20130416195024) do
+
+  create_table "feedback_types", :force => true do |t|
+    t.string   "type"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "feedbacks", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.text     "feedback_text"
+    t.integer  "type"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
 
   create_table "prices", :force => true do |t|
     t.string   "service_name"
@@ -20,6 +35,15 @@ ActiveRecord::Schema.define(:version => 20130416185918) do
     t.integer  "time"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "works", :force => true do |t|
+    t.string   "title"
+    t.string   "describe"
+    t.string   "link"
+    t.integer  "price_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
