@@ -4,10 +4,10 @@
   - @works.each do |work|
     %hr.featurette-divider
     .featurette
-      %img.featurette-image.pull-right{:src => "../assets/img/examples/browser-icon-chrome.png"}/
+      %img.featurette-image.pull-right{:src => "../assets/img/examples/browser-icon-chrome.png"}
       %h2.featurette-heading
         =work.title
-        %span.muted Company (it will be add!!!)
+        %span.muted =work.client.title
       %p.lead= work.describe
 
 %br
