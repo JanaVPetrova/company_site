@@ -13,6 +13,9 @@
 %p
   %b Ссылка
   = @work.link
+%p
+  %b Компания
+  = @work.client.title
 
 = link_to 'Edit', edit_work_path(@work) |
 = link_to 'Back', works_path

@@ -5,9 +5,8 @@ CompanySite::Application.routes.draw do
   resources :works
 
   resources :prices
-
-  root :to => 'prices#index'
-
+  
+  match "works" => "works#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
