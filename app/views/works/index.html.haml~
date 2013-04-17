@@ -1,25 +1,14 @@
 %h1
   Проекты
 
-%table
-  %tr
-    %th Название
-    %th Описание
-    %th Вид проекта
-    %th Ссылка
-    %th
-    %th
-    %th
-
   - @works.each do |work|
-    %tr
-      %td= work.title
-      %td= work.describe
-      %td= work.price.service_name
-      %td= price.link
-      %td= link_to 'Show', work
-      %td= link_to 'Edit', edit_work_path(work)
-      %td= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' }
+    %hr.featurette-divider
+    .featurette
+      %img.featurette-image.pull-right{:src => "../assets/img/examples/browser-icon-chrome.png"}/
+      %h2.featurette-heading
+        =work.title
+        %span.muted Company (it will be add!!!)
+      %p.lead= work.describe
 
 %br
 
